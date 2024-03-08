@@ -1,11 +1,16 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+/*Navigation bar*/
 
 body {
     box-sizing: 0;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
+    
 }
+
 
 li, a, button {
     font-family: "Montserrat", sans-serif;
@@ -20,11 +25,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    background-color: #24252A;
+
 }
 
 .logo {
     cursor: pointer;
-    max-width: 1000px; /* Adjust the maximum width as needed */
+    max-width: 1000px; 
     height: auto;
 }
 
@@ -39,10 +46,10 @@ header {
 
 .nav-links li a {
     transition: all 0.3s ease 0s;
-}
+} 
 
-.nav-links li a:hover{
-    color: #0088a9
+.nav-links li a:hover {
+    color:rgba(0,136,169,1); 
 }
 
 button {
@@ -58,4 +65,54 @@ button:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
 
+/*Header and page contents*/
 
+.welcome {
+    font-family: "Montserrat", sans-serif;
+    font-size: 64px;
+    text-align: center;
+}
+
+.about {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 10%;
+    margin-bottom: 50px;
+}
+
+#hostEvent {
+    display: block;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding: 50px 10%;
+    background-color: rgba(0,156,139,1);
+    transition: all 0.3s ease;
+    margin-bottom: 40px;
+
+}
+
+#hostEvent:hover {
+    background-color:rgba(0,156,139,0.8);
+}
+
+#attendEvent {
+    display: block;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding: 50px 10%;
+    background-color: rgba(149,9,82,1);
+    transition: all 0.3s ease;
+    margin-top: 40px;
+}
+#attendEvent:hover {
+    background-color: rgba(149,9,82,0.8);
+}
