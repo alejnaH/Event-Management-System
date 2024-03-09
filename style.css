@@ -46,6 +46,7 @@ header {
 
 .nav-links li a {
     transition: all 0.3s ease 0s;
+    color: #edf0f1;
 } 
 
 .nav-links li a:hover {
@@ -118,24 +119,122 @@ button:hover {
     background-color: rgba(149,9,82,0.8);
 }
 
-/**Login page*/
+/**Log in page*/
 #content {
     width:  550px; 
-    height: 700px; 
+    height: 460px; 
     background-color: rgb(255, 255, 255); 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px; /* Add padding */
+    padding: 20px;
     text-align: center;
 }
 .content-text {
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 
-.login-page {
+body.login-page {
     background-image: url("images/login.png");
-    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a {
+    color: rgba(0,136,169,1);
+    text-decoration: none;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+#login-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*Sign up page*/
+
+/*Sign up page*/
+
+#content-signup{
+    width:  550px; 
+    height: 460px; 
+    background-color: rgb(255, 255, 255); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+}
+.content-box {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+
+body.signup-page {
+    background-image: url("images/signup.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a {
+    color: rgba(0,136,169,1);
+    text-decoration: none;
+}
+
+input[type="emailSign"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+input[type="passwordSign"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+input[type="date"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+#signup-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 16px;
 }
