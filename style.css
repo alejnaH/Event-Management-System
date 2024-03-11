@@ -8,7 +8,6 @@ body {
     box-sizing: 0;
     margin: 0;
     padding: 0;
-    
 }
 
 
@@ -409,24 +408,25 @@ input[type="eventDate"] {
 
 .event-container {
     display: flex;
-    justify-content: space-between; 
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-top: 50px;
-    padding: 0 30px; /* Add horizontal padding to your container */
+    margin-bottom: 150px; 
+    padding: 0 30px; 
 }
-
 .event-block {
     margin: 20px;
+    margin-right: 50px;
     padding: 5px;
     text-align: left; 
     border: 1px solid #b2b5c0;
     position: relative; 
     top: initial; 
     transform: none;
-    flex: 0 0 30%;
+    width: 300px; 
+    height: 300px; 
+    overflow: auto; 
 }
-
-
 
 .event-block .event-date {
     margin-top: 0; 
@@ -468,3 +468,9 @@ input[type="eventDate"] {
     gap: 20px; 
 
 }
+.event-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
