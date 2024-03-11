@@ -171,7 +171,7 @@ input[type="email"] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    margin-top: 30px;
+    margin-top: 45px;
 }
 
 input[type="password"] {
@@ -374,7 +374,7 @@ input[type="time"] {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    margin-top: -10px; /* Add this line to move the button up */
+    margin-top: -10px; 
 }
 
 /*Attend event page*/
