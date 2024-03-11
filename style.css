@@ -298,6 +298,13 @@ body.hostEvent {
 
 input[type="eventName"] {
     width: 100%;
+    .search-container {
+        display: flex;
+        justify-content: left;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+    }
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -357,17 +364,69 @@ input[type="eventDate"] {
 
 /*Attend event page*/
 
+
+.myEvent-nav {
+    background-color: #333; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.myEvent-nav h1 {
+    margin: 0;
+}
+
+.search-container {
+    display: flex;
+    justify-content: left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.myEvent-nav .home-button {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-right: 50px; 
+
+}
+
+.myEvent-nav .home-button:hover {
+    color: rgba(0,136,169,0.8);
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #b2b5c0;
+}
+
+.event-container {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 0 30px; /* Add horizontal padding to your container */
+}
+
 .event-block {
-    width: 300px; 
+    margin: 20px;
     padding: 5px;
     text-align: left; 
     border: 1px solid #b2b5c0;
-    margin-left: 20px; 
-    position: absolute; 
-    top: 50%; 
-    transform: translateY(-50%); 
-
+    position: relative; 
+    top: initial; 
+    transform: none;
+    flex: 0 0 30%;
 }
+
+
 
 .event-block .event-date {
     margin-top: 0; 
