@@ -1,0 +1,493 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+/*Navigation bar*/
+
+body {
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10%; 
+    background-color: #24252A;
+}
+
+.logo {
+    cursor: pointer;
+    max-width: 1000px; 
+    height: auto;
+}
+
+nav {
+    align-items: center;
+    padding: 0px 5%; 
+    background-color: #24252A;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+    color: #edf0f1;
+} 
+
+.nav-links li a:hover {
+    color:rgba(0,136,169,1); 
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+/*Header and page contents*/
+
+.welcome {
+    font-family: "Montserrat", sans-serif;
+    font-size: 64px;
+    text-align: center;
+}
+
+.about {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 10%;
+    margin-bottom: 50px;
+}
+
+/*Buttons*/
+#hostEvent {
+    display: block;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding: 50px 10%;
+    background-color: rgba(0,156,139,1);
+    transition: all 0.3s ease;
+    margin-bottom: 40px;
+
+}
+
+#hostEvent:hover {
+    background-color:rgba(0,156,139,0.8);
+}
+
+#attendEvent {
+    display: block;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding: 50px 10%;
+    background-color: rgba(149,9,82,1);
+    transition: all 0.3s ease;
+    margin-top: 40px;
+}
+#attendEvent:hover {
+    background-color: rgba(149,9,82,0.8);
+}
+
+footer {
+    background-color: #24252A;
+    color: #edf0f1;
+    padding: 20px; 
+    position: fixed; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center
+}
+
+/**Log in page*/
+
+#content {
+    width:  550px; 
+    height: 460px; 
+    background-color: rgb(255, 255, 255); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+}
+.content-text {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+
+body.login-page {
+    background-image: url("images/login.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a {
+    color: rgba(0,136,169,1);
+    text-decoration: none;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 45px;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+#login-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*Sign up page*/
+
+#content-signup{
+    width:  550px; 
+    height: 700px; 
+    background-color: rgb(255, 255, 255); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+}
+.content-box {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+
+body.signup-page {
+    background-image: url("images/signup.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a {
+    color: rgba(0,136,169,1);
+    text-decoration: none;
+}
+input[type="name"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+input[type="lastname"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+input[type="emailSign"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+input[type="passwordSign"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+input[type="date"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+#signup-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*Host event page*/
+
+#content-hostEvent {
+    width: 800px; 
+    height: 700px; 
+    background-color: rgb(255, 255, 255); 
+    position: absolute;
+    top: 47%; /* I put 47% because on 50/50 its not right in the center because of the footer*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+}
+
+.content-hostEvent {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+body.hostEvent {
+    background-image: url(images/host.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+input[type="eventName"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+textarea#description {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 30px;
+    resize: none;
+
+}
+.location-inputs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.location-inputs input {
+    flex: 1;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 30px;
+}Decrease this percentage to move the element up 
+
+.location-inputs div {
+    width: 48%;
+}
+
+input[type="country"], input[type="city"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+input[type="address"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+input[type="time"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+#host {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: -10px; 
+}
+
+/*Attend event page*/
+
+
+.myEvent-nav {
+    background-color: #24252A; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.myEvent-nav h1 {
+    margin: 0;
+}
+
+.search-container {
+    display: flex;
+    justify-content: left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.myEvent-nav .home-button {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-right: 50px; 
+
+}
+
+.myEvent-nav .home-button:hover {
+    color: rgba(0,136,169,0.8);
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #b2b5c0;
+}
+
+.event-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 150px; 
+    padding: 0 30px; 
+}
+.event-block {
+    margin: 20px;
+    margin-right: 50px;
+    padding: 5px;
+    text-align: left; 
+    border: 1px solid #b2b5c0;
+    position: relative; 
+    top: initial; 
+    transform: none;
+    width: 300px; 
+    height: 300px; 
+    overflow: auto; 
+}
+
+.event-block .event-date {
+    margin-top: 0; 
+}
+
+.event-block .event-title {
+    color:rgba(149,9,82,1); 
+}
+
+.event-block img {
+    width: 100%; 
+    height: 150px; 
+    object-fit: cover; 
+
+}
+
+.event-block .event-date,
+.event-block .event-title,
+.event-block .event-description {
+    margin: 5px 0; 
+}
+
+.event-block a {
+    font-size: 14px; 
+    color: rgba(149,9,82,1); 
+    transition: all 0.3s ease 0s; 
+    font-weight: normal; 
+    color: inherit; 
+    text-decoration: none; 
+
+}
+
+.event-block p, .event-block a {
+    color: black; 
+}
+
+.event-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+
+}
+.event-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
