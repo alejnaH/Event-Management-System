@@ -11,19 +11,23 @@
             </div>
         </section>
         <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <p><h1>Event name</h1></p>
-              <p><h5>01/01/2024</h5></p>
-              <p>Country, City</p>
-              <p>Address</p>
-              <p>Description</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                <br>Sed euismod, nunc at pellentesque aliquet, sem diam aliquam diam, 
-                <br>vitae fringilla sapien ante eget mauris. Aenean euismod volutpat 
-                egestas.</p></p>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal Title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
+        
         <!-- Section-->
         <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
@@ -44,7 +48,30 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View more</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="javascript:void(0);">View more</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="date">
+                                    <p>03/08/2024</p>
+                                </div>
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Event name</h5>   <!-- 19 characters-->
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+
+                                <!--This one is the real deal-->
+                                <a href="javascript:void(0);" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#myModal">View more</a>
+                                <!--yes this is the only one that works but also shifts your button to the left which your gonna need to fix-->
                             </div>
                         </div>
                     </div>
@@ -124,7 +151,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View more</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="javascript:void(0);">View more</a></div>
                             </div>
                         </div>
                     </div>
@@ -144,7 +171,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View more</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" id="viewMoreButton1" href="javascript:void(0);">View more</a></div>
                             </div>
                         </div>
                     </div>
@@ -164,29 +191,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" id="viewMoreButton1" href="#">View more</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="date">
-                                    <p>03/08/2024</p>
-                                </div>
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Event name</h5>   <!-- 19 characters-->
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View more</a></div>
-                            </div>
-                        </div>
+                                <a href="javascript:void(0);" class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#myModal">View more</a>                        </div>
                     </div>
                 </div>
             </div>
