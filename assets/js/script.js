@@ -19,22 +19,21 @@ function closeModal() {
 
 
 //dashboard
-document.addEventListener("DOMContentLoaded", function(event) {
-    // Note: No need to manually handle modal closing since Bootstrap handles it
-
-    // Add the event listener for the "Learn More" button here
-    var learnMoreButton = document.querySelector('.learn-more');
-    if (learnMoreButton) {
-        learnMoreButton.addEventListener('click', function(event) {
-            event.preventDefault();
-            var scrollSection = document.getElementById('scroll');
-            if (scrollSection) {
-                scrollSection.scrollIntoView({behavior: 'smooth'});
-            }
-        });
-    }
-});
-//dashboard 
+$(document).ready(function() {
+  // Add the event listener for the "Learn More" button here
+  var learnMoreButton = $('.learn-more');
+  if (learnMoreButton.length) {
+      learnMoreButton.on('click', function(event) {
+          event.preventDefault();
+          var scrollSection = $('#scroll');
+          if (scrollSection.length) {
+              $('html, body').animate({
+                  scrollTop: scrollSection.offset().top
+              },100);
+          }
+      });
+  }
+});hboard 
 
 
 
