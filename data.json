@@ -1,0 +1,27 @@
+[
+  {
+    "event_name": "Country side concert",
+    "date": "2024-03-08",
+    "time": "12:00",
+    "country": "Bosnia",
+    "city": "City 1",
+    "description": "Lorem ipsum"
+  },
+  {
+    "event_name": "Pet adoption shelter",
+    "date": "2024-03-09",
+    "time": "14:00",
+    "country": "Florida",
+    "city": "City 2",
+    "description": "Lorem ipsum"
+  },
+  {
+    "event_name": "Art galery Lorem",
+    "date": "2024-08-03",
+    "time": "14:00",
+    "country": "Netherlands",
+    "city": "City 2",
+    "description": "Lorem ipsum"
+  }
+  
+]
