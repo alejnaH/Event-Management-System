@@ -11069,238 +11069,65 @@ border-bottom-right-radius: .3rem;
 
 /*Host event*/
 
-.survey-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background: #ffffff;
-  /* Ch
-.survey-form-container {
-  width: 100%;
-  max-width: 600px; /* Adjust as needed */
+.gradient-form {
+  
+  min-height: 100vh;
+}
+.title-host h5 {
+  font-weight: bold; /* Make the font bold */
+  font-size: 1.7em; /* Increase the font size */
 }
 
-.modal-content {
-  background-color: #fefefe;
-  margin: 10% auto;
+.container-host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 25px - 25px); /* Subtract increased navbar and footer heights */
+  margin-top: 70px; /* Add a top margin to move the card down */
+
+}
+textarea {
+  height: 38px; /* Set a fixed height for the textarea */
+  overflow-y: auto; /* Add a vertical scrollbar when the text exceeds the height */
+  resize: none; /* Prevent the textarea from being manually resizable */
+}
+
+@media (max-width: 600px) {
+  .container-host {
+    height: calc(100vh - 50px - 50px); /* Increase the subtracted values to make more space for the navbar and footer */
+    margin-top: 170px; /* Increase the top margin to move the card down */
+  }
+
+  .event-form input, .event-form textarea {
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  .event-form textarea {
+    width: 100%; /* Set a specific width for the textarea */
+  }
+}
+
+.host-card {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 800px; /* Increase max-width */
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
   padding: 20px;
-  border: 1px solid #888;
-  width: 60%;
-  font-family: 'Catamaran', sans-serif; /* Apply the Catamaran font to the modal */
-  color: #000;
-  font-weight: normal; /* Make the text not bold */
 }
 
-.modal-content h5 {
-  font-family: 'Lato', sans-serif; /* Apply the Lato font to the title */
-  color: red; /* Change the color of the title to red */
-  font-weight: normal; /* Make the title not bold */
-}
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+.title-host {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+.form-host {
+  margin-bottom: 0.5rem; /* Decrease bottom margin */
 }
 
-#regForm {
-  background-color: #ffffff;
-  margin: 0px auto;
-  font-family: Raleway;
-  padding: 40px;
-  border-radius: 10px
-}
-
-
-#register{
-
-color: #000;
-}
-
-h1 {
-  text-align: center
-}
-
-input {
+.form-host input {
+  width: 100%;
+  max-width: 700px; /* Increase max-width of inputs to match the card */
   padding: 10px;
-  width: 100%;
-  font-size: 17px;
-  font-family: Raleway;
-  border: 1px solid #aaaaaa;
-  border-radius: 10px;
-  -webkit-appearance: none;
-}
-
-
-
-.tab input:focus{
-
-border:1px solid #e83e8c !important;
-outline: none;
-}
-
-input.invalid {
-
-  border:1px solid #e03a0666;
-}
-
-.tab {
-  display: none
-}
-
-button {
-  background-color: #e83e8c;
-  color: #ffffff;
-  border: none;
-  border-radius: 50%;
-  padding: 10px 20px;
-  font-size: 17px;
-  font-family: Raleway;
-  cursor: pointer
-}
-
-button:hover {
-  opacity: 0.8
-}
-
-button:focus{
-
-outline: none !important;
-}
-
-#prevBtn {
-  background-color: #bbbbbb
-}
-
-
-.all-steps{
-    text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 100%;
-  display: inline-flex;
-  justify-content: center;
-}
-
-.step {
-  height: 40px;
-  width: 40px;
-  margin: 0 2px;
-  background-color: #bbbbbb;
-  border: none;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
-  color: #e83e8c; /* Change this line */
-  opacity: 0.5;
-}
-
-.step.active {
-  opacity: 1
-}
-
-
-.step.finish {
-  color: #fff;
-  background: #e83e8c; /* Change this line */
-  opacity: 1;
- }
-
-/* Style the Next & Previous buttons */
-#nextBtn, #prevBtn {
-  position: relative; /* Add this line */
-  background-color: #6a1b9a;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-/* Add an arrow icon to the "Next" button */
-/* Add an arrow icon to the "Next" button */
-#nextBtn::after {
-  content: ">>";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 20px;
-  color: white;
-}
-
-#nextBtn {
-    background-color: #dc3545; /* Change this line */
-}
-
-#prevBtn {
-  background-color: gray; /* Change this line */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-/* Add a "<<" icon to the "Previous" button */
-#prevBtn::before {
-  content: "<<";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 20px;
-  color: white;
-}
-
-#nextBtn:hover, #prevBtn:hover {
-    background-color: #dc3545; /* Change this line */
-  ;
-}
-
-/* Style the Font Awesome icons */
-#nextBtn .fa, #prevBtn .fa {
-  margin: 0 5px;
-}
-
-
-.all-steps {
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px
-}
-
-.tab:nth-child(1)::before {
-  content: "1";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-
-.thanks-message {
-  display: none
 }
