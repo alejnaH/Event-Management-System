@@ -11021,22 +11021,15 @@ border-bottom-right-radius: .3rem;
 /*Sign up page*/
 
 
-.gradient-custom-3 {
-  /* fallback for old browsers */
+/*.gradient-custom-3 {
   background: #fccb90;
 
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
 
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
-}
+}*/
 
-@media (min-width: 768px) {
-  .gradient-form-signup {
-    height: 70vh !important; /* Adjust this value as needed */
-  }
-}
+
 
 
 /*Browse events*/
@@ -11080,12 +11073,6 @@ border-bottom-right-radius: .3rem;
   align-items: center;
   height: calc(100vh - 25px - 25px);
   margin-top: 70px;
-}
-
-textarea {
-  height: 38px;
-  overflow-y: auto;
-  resize: none;
 }
 
 #host-btn {
