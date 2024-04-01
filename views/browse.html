@@ -101,6 +101,10 @@
         city.innerHTML = `<strong>City:</strong> ${eventData.city}`;
         eventDetails.appendChild(city);
 
+        const description = document.createElement('p');
+        description.innerHTML = `<strong>Description:</strong> ${eventData.description}`;
+        eventDetails.appendChild(description);
+
         modalBody.appendChild(eventDetails);
     }
 </script>

@@ -4,23 +4,63 @@
     "date": "2024-03-08",
     "time": "12:00",
     "country": "Bosnia",
-    "city": "City 1",
+    "city": "Sarajevo",
     "description": "Lorem ipsum"
   },
   {
     "event_name": "Pet adoption shelter",
     "date": "2024-03-09",
     "time": "14:00",
-    "country": "Florida",
-    "city": "City 2",
+    "country": "France",
+    "city": "Paris",
     "description": "Lorem ipsum"
   },
   {
     "event_name": "Art galery Lorem",
     "date": "2024-08-03",
     "time": "14:00",
-    "country": "Netherlands",
-    "city": "City 2",
+    "country": "Norway",
+    "city": "Oslo",
+    "description": "Lorem ipsum"
+  },
+  {
+    "event_name": "Web programming conference",
+    "date": "2024-08-03",
+    "time": "14:00",
+    "country": "Bosnia" ,
+    "city": "Mostar",
+    "description": "Lorem ipsum"
+  },
+  {
+    "event_name": "Country side concert",
+    "date": "2024-03-08",
+    "time": "12:00",
+    "country": "Bosnia",
+    "city": "Sarajevo",
+    "description": "Lorem ipsum"
+  },
+  {
+    "event_name": "Pet adoption shelter",
+    "date": "2024-03-09",
+    "time": "14:00",
+    "country": "France",
+    "city": "Paris",
+    "description": "Lorem ipsum"
+  },
+  {
+    "event_name": "Art galery Lorem",
+    "date": "2024-08-03",
+    "time": "14:00",
+    "country": "Norway",
+    "city": "Oslo",
+    "description": "Lorem ipsum"
+  },
+  {
+    "event_name": "Web programming conference",
+    "date": "2024-08-03",
+    "time": "14:00",
+    "country": "Bosnia" ,
+    "city": "Mostar",
     "description": "Lorem ipsum"
   }
   

@@ -11070,41 +11070,43 @@ border-bottom-right-radius: .3rem;
 /*Host event*/
 
 .gradient-form {
-  
   min-height: 100vh;
 }
+
 .title-host h5 {
-  font-weight: bold; /* Make the font bold */
-  font-size: 1.7em; /* Increase the font size */
+  font-weight: bold;
+  font-size: 1.7em;
 }
 
 .container-host {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 25px - 25px); /* Subtract increased navbar and footer heights */
-  margin-top: 70px; /* Add a top margin to move the card down */
+  height: calc(100vh - 25px - 25px);
+  margin-top: 70px;
+}
 
-}
 textarea {
-  height: 38px; /* Set a fixed height for the textarea */
-  overflow-y: auto; /* Add a vertical scrollbar when the text exceeds the height */
-  resize: none; /* Prevent the textarea from being manually resizable */
+  height: 38px;
+  overflow-y: auto;
+  resize: none;
 }
+
+#host-btn {
+  margin-top: 50px; /* Adjust margin-top value as needed */
+}
+
 
 @media (max-width: 600px) {
   .container-host {
-    height: calc(100vh - 50px - 50px); /* Increase the subtracted values to make more space for the navbar and footer */
-    margin-top: 170px; /* Increase the top margin to move the card down */
+    height: calc(100vh - 50px - 50px);
+    margin-top: 170px;
   }
 
-  .event-form input, .event-form textarea {
-    width: 100%;
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
-  }
-  
+  .event-form input,
   .event-form textarea {
-    width: 100%; /* Set a specific width for the textarea */
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
