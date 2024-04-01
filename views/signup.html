@@ -31,7 +31,7 @@
                 </div>
 
                 <div class="form-signup">
-                  <input type="repeatPassword" id="repeatPassword" class="form-control form-control-lg" />
+                  <input type="password" id="repeatPassword" class="form-control form-control-lg" />
                   <label class="form-label" for="repeatPassword">Repeat your password</label>
                 </div>
 
@@ -60,23 +60,36 @@
 </section>
 
 <script>
-  document.getElementById('register-btn').addEventListener('click', function () {
-    var password = document.getElementById('password');
-    var repeatPassword = document.getElementById('repeatPassword');
+ document.getElementById('register-btn').addEventListener('click', function () {
+    var username = document.getElementById('username').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var password = document.getElementById('password').value.trim();
+    var repeatPassword = document.getElementById('repeatPassword').value.trim();
+    var termsOfServiceChecked = document.getElementById('termsOfService').checked;
 
-    if (password.value !== repeatPassword.value) {
-        alert("Passwords do not match");
+    if (username.length === 0 || email.length === 0 || password.length === 0 || repeatPassword.length === 0) {
+        alert("Please fill in all fields");
         return; // Exit the function
     }
 
+    if (password !== repeatPassword) {
+        alert("Passwords do not match");
+        return;
+    }
+
+    if (!termsOfServiceChecked) {
+        alert("Please agree to register as a myEvent user");
+        return;
+    }
+
     var formData = {
-        username: document.getElementById('username').value,
-        email: document.getElementById('email').value,
-        password: password.value,
-        repeatPassword: repeatPassword.value
+        username: username,
+        email: email,
+        password: password,
+        repeatPassword: repeatPassword
     };
 
     console.log(formData);
     alert("You have registered as a myEvent member!");
-});
+  });
 </script>
