@@ -48,19 +48,34 @@
 </section>
 
  <script>
-  document.getElementById('host-btn').addEventListener('click', function () {
+   document.getElementById('host-btn').addEventListener('click', function () {
+    var eventName = document.getElementById('event-name').value.trim();
+    var date = document.getElementById('date').value.trim();
+    var time = document.getElementById('time').value.trim();
+    var country = document.getElementById('country').value.trim();
+    var city = document.getElementById('city').value.trim();
+    var address = document.getElementById('address').value.trim();
+    var description = document.getElementById('description').value.trim();
+
+    if (eventName.length === 0 || date.length === 0 || time.length === 0 || country.length === 0 || city.length === 0 || address.length === 0 || description.length === 0) {
+        alert("Please fill in all fields");
+        return; // Exit the function
+    }
+
     var formData = {
-      event_name: document.getElementById('event-name').value,
-      date: document.getElementById('date').value,
-      time: document.getElementById('time').value,
-      country: document.getElementById('country').value,
-      city: document.getElementById('city').value,
-      address: document.getElementById('address').value,
-      description: document.getElementById('description').value
+      event_name: eventName,
+      date: date,
+      time: time,
+      country: country,
+      city: city,
+      address: address,
+      description: description
     };
+
     console.log(formData);
-    alert("Event hosted!")
+    alert("Event hosted!");
   });
+</script>
 </script>
  
  
