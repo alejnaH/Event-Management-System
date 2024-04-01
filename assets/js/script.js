@@ -20,20 +20,17 @@ function closeModal() {
 
 //dashboard
 $(document).ready(function() {
-  // Add the event listener for the "Learn More" button here
-  var learnMoreButton = $('.learn-more');
-  if (learnMoreButton.length) {
-      learnMoreButton.on('click', function(event) {
-          event.preventDefault();
-          var scrollSection = $('#scroll');
-          if (scrollSection.length) {
-              $('html, body').animate({
-                  scrollTop: scrollSection.offset().top
-              },100);
-          }
-      });
-  }
-})
+    // Add the event listener for the "Learn More" button here
+    $(document).on('click', '.learn-more', function(event) {
+        event.preventDefault();
+        var scrollSection = $('#scroll');
+        if (scrollSection.length) {
+            $('html, body').animate({
+                scrollTop: scrollSection.offset().top
+            }, 100);
+        }
+    });
+  });
 
 
 

@@ -11041,10 +11041,6 @@ border-bottom-right-radius: .3rem;
 
 /*Browse events*/
 
-#mySearchBar {
-  margin-top: 100px; /* Adjust this value as needed */
-  margin-bottom:10pxl
-}
 
 .btn-outline-dark {
   --bs-btn-color: #212529;
@@ -11133,3 +11129,45 @@ textarea {
   max-width: 700px; /* Increase max-width of inputs to match the card */
   padding: 10px;
 }
+
+/*browse search bar*/
+
+
+.mySearchBar {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
+
+.mySearchBar:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #f784bc;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(238, 9, 121, 0.25);
+}
+
+#mySearchBar {
+  margin-top: 50px; 
+  margin-bottom: 50px;
+  margin-bottom:10pxl
+}
+
+
+
+
+
+
+
