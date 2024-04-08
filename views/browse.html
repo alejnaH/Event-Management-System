@@ -1,0 +1,113 @@
+<section>
+    <div class="container px-4 px-lg-5 mt-5">
+        <!-- Search bar -->
+        <div class="mb-4">
+            <input type="text" class="mySearchBar" id="mySearchBar" placeholder="Search">
+        </div>
+        
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center" id="cardContainer">
+            <!-- Your blocks here -->
+        </div>
+    </div>
+</section>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Event Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal data will be dynamically inserted here -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!---<button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    let eventData = [];
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            eventData = data;
+            populateCards();
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+    function populateCards() {
+        const cardContainer = document.getElementById('cardContainer');
+
+        eventData.forEach(event => {
+            const card = document.createElement('div');
+            card.classList.add('col', 'mb-5');
+            card.innerHTML = `
+                <div class="card h-100">
+                    <img class="card-img-top" src="images/browse01.png" alt="img" />
+                    <div class="card-body p-4">
+                        <div class="date">
+                            <p>${event.date}</p>
+                        </div>
+                        <div class="text-center">
+                            <h5 class="fw-bolder">${event.event_name}</h5>
+                        </div>
+                    </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <a href="#" class="btn btn-outline-dark mt-auto view-more-btn" data-bs-toggle="modal" data-bs-target="#myModal" data-event='${JSON.stringify(event)}'>View more</a>
+                    </div>
+                </div>
+            `;
+            cardContainer.appendChild(card);
+        });
+    }
+
+    document.addEventListener("click", function (event) {
+        if (event.target.classList.contains('view-more-btn')) {
+            console.log("View more button clicked!");
+            const eventData = JSON.parse(event.target.getAttribute('data-event'));
+            populateModal(eventData);
+        }
+    });
+
+    function populateModal(eventData) {
+        const modalBody = document.getElementById('modalBody');
+        modalBody.innerHTML = '';
+
+        const eventDetails = document.createElement('div');
+
+        const eventName = document.createElement('p');
+        eventName.innerHTML = `<strong>Event Name:</strong> ${eventData.event_name}`;
+        eventDetails.appendChild(eventName);
+
+        const date = document.createElement('p');
+        date.innerHTML = `<strong>Date:</strong> ${eventData.date}`;
+        eventDetails.appendChild(date);
+
+        const time = document.createElement('p');
+        time.innerHTML = `<strong>Time:</strong> ${eventData.time}`;
+        eventDetails.appendChild(time);
+
+        const country = document.createElement('p');
+        country.innerHTML = `<strong>Country:</strong> ${eventData.country}`;
+        eventDetails.appendChild(country);
+
+        const city = document.createElement('p');
+        city.innerHTML = `<strong>City:</strong> ${eventData.city}`;
+        eventDetails.appendChild(city);
+
+        const description = document.createElement('p');
+        description.innerHTML = `<strong>Description:</strong> ${eventData.description}`;
+        eventDetails.appendChild(description);
+
+        modalBody.appendChild(eventDetails);
+    }
+</script>
+
+

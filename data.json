@@ -1,0 +1,67 @@
+[
+  {
+    "event_name": "Country side concert",
+    "date": "2024-03-08",
+    "time": "12:00",
+    "country": "Bosnia",
+    "city": "Sarajevo",
+    "description": "Lorem ipsum"
+  },
+  {
+    "event_name": "Pet adoption shelter",
+    "date": "2024-03-09",
+    "time": "14:00",
+    "country": "France",
+    "city": "Paris",
+    "description": "Lorem ipsum"
+  },
+  {
+    "event_name": "Art galery Lorem",
+    "date": "2024-08-03",
+    "time": "14:00",
+    "country": "Norway",
+    "city": "Oslo",
+    "description": "Lorem ipsum"
+  },
+  {
+    "event_name": "Planting trees!",
+    "date": "2024-05-05",
+    "time": "11:00",
+    "country": "USA, Texas" ,
+    "city": "Dallas",
+    "description": "Lorem ipsum"
+  },
+  {
+    "event_name": "Lemonade stand",
+    "date": "2024-09-02",
+    "time": "12:00",
+    "country": "Denmark",
+    "city": "Copenhagen",
+    "description": "Lorem ipsum"
+  },
+  {
+    "event_name": "Rock n roll festival",
+    "date": "2025-08-09",
+    "time": "17:00",
+    "country": "Italy",
+    "city": "Turin",
+    "description": "Lorem ipsum"
+  },
+  {
+    "event_name": "Save the bees!",
+    "date": "2024-04-03",
+    "time": "10:00",
+    "country": "Spain",
+    "city": "Barcelona",
+    "description": "Lorem ipsum"
+  },
+  {
+    "event_name": "Night of comedy",
+    "date": "2024-07-07",
+    "time": "20:00",
+    "country": "Belgium" ,
+    "city": "Brussels",
+    "description": "Lorem ipsum"
+  }
+  
+]

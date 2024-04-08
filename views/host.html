@@ -1,0 +1,81 @@
+<section class="gradient-form">
+  <div class="container-host">
+    <div class="card host-card">
+      <div class="title-host">
+        <h5>Host an event!</h5>
+      </div>
+
+      <form class="event-form" method="post">
+
+        <div class="form-host">
+          <input name="event_name" type="text" id="event-name" class="form-control form-control-lg" maxlength="19" placeholder="Event name" />
+        </div>
+
+        <div class="form-host">
+          <input name="date" type="date" id="date" class="form-control form-control-lg" />
+        </div>
+
+        <div class="form-host">
+          <input name="time" type="time" id="time" class="form-control form-control-lg" />
+        </div>
+
+        <div class="form-host">
+          <input name="country" type="country" id="country" class="form-control form-control-lg" maxlength="25" placeholder="Country" />
+        </div>
+
+        <div class="form-host">
+          <input name="city" type="city" id="city" class="form-control form-control-lg" maxlength="20" placeholder="City" />
+        </div>
+
+        <div class="form-host">
+          <input name="address" type="address" id="address" class="form-control form-control-lg" maxlength="20" placeholder="Address" />
+        </div>
+
+        <div class="form-host">
+          <input name="description" id="description" class="form-control form-control-lg" maxlength="500" placeholder="Description"></textarea>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button" id="host-btn">Host</button>
+        </div>
+
+        <p class="text-center text-muted mt-5 mb-0">Want to join an event? <a href="#browse" class="fw-bold text-body"><u>Join here</u></a></p>
+
+      </form>
+
+    </div>
+  </div>
+</section>
+
+ <script>
+   document.getElementById('host-btn').addEventListener('click', function () {
+    var eventName = document.getElementById('event-name').value.trim();
+    var date = document.getElementById('date').value.trim();
+    var time = document.getElementById('time').value.trim();
+    var country = document.getElementById('country').value.trim();
+    var city = document.getElementById('city').value.trim();
+    var address = document.getElementById('address').value.trim();
+    var description = document.getElementById('description').value.trim();
+
+    if (eventName.length === 0 || date.length === 0 || time.length === 0 || country.length === 0 || city.length === 0 || address.length === 0 || description.length === 0) {
+        alert("Please fill in all fields");
+        return; // Exit the function
+    }
+
+    var formData = {
+      event_name: eventName,
+      date: date,
+      time: time,
+      country: country,
+      city: city,
+      address: address,
+      description: description
+    };
+
+    console.log(formData);
+    alert("Event hosted!");
+  });
+</script>
+</script>
+ 
+ 

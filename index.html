@@ -1,39 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my Event</title>
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>myEvent</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="assets/css/styles.css" rel="stylesheet" />
 
-</head>
-<body>
-    <nav></nav>
+        <link rel="stylesheet" href="./assets/css/spapp.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+        
+                <!-- OVO DODALA -->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>-->
+        
+        
+
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
         <header>
-        <img class="logo"src="images/logo.png"alt="logo">
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-
-
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" role="navigation">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#dashboard">myEvent</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#dashboard">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#browse">Browse events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#host">Host event</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#signup">Sign Up</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#login">Log In</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <a class="cta" href="login.html"target="blank"><button>Log in</button></a>
-    </header>
-    
-    <p class="welcome">Welcome!</p>
+        </header>
+        <!-- Header-->
+        
+        <!--main body-->
 
-    <p class="about">myEvent is a website that helps you find all kinds of events, as well as let you host your own. <br>
-        It can take up charity and fundraising events, festivals, environmental events and anything you can think of. </p>
+        <section id="pageContent">
 
-        <a href="hostEvent.html"><button id="hostEvent">Host event</button></a>
-        <a href="attendEvent.html"><button id="attendEvent">Attend event</button></a>
+            <main id="spapp" role="main">
+
+                <section id="dashboard" data-load="dashboard.html"></section>
+                <section id="host" data-load="host.html"></section>
+                <section id="browse" data-load="browse.html"></section>
+                <section id="login" data-load="login.html"></section>
+                <section id="signup" data-load="signup.html"></section>
+
+            </main>
 
 
-<footer>
-    ©myEvent 2024
-</footer>
-</body>
+        </section>
+
+
+
+
+        <!--main body end-->
+        
+        <!-- Footer-->
+        <footer class="py-5 bg-black">
+            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; myEvent 2024</p></div>
+        </footer>
+        <script src="./assets/js/jquery.min.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        
+        <script src="./assets/js/jquery.spapp.min.js"></script>
+
+
+        <!-- Core theme JS-->
+        <script src="assets/js/script.js">
+        </script>
+        
+
+    </body>
 </html>
