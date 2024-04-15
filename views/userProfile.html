@@ -1,0 +1,25 @@
+<link href="/assets/css/styles.css">
+
+
+<section class="bodyProfile">
+    <div class="cardProfile">
+        <div class="profile-image"href="userIcon.png"></div>
+        <h2 style="font-weight:bold;">Username</h2>
+        <p>Email: example@example.com</p>
+        <div class="gender-container" onclick="changeGender()">
+            <p id="gender">She/Her</p> <!-- Replace with actual gender -->
+        </div>
+    </div>
+</section>
+
+<style>
+    .profile-image {
+      background-image: url('./images/userIcon.png');
+    }
+</style>
+
+<script>
+    function changeGender() {
+        console.log('Gender container clicked');
+    }
+</script>
