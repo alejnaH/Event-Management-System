@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             "date" => $date,
             "time" => $time,
             "description" => $description,
-            "country" => $country,    //ovo radi, al se trebaju staviti argumenti u bazu, kakvi argumenti tota just too funny :) 
+            "country" => $country,    
             "city" => $city
         ];
 

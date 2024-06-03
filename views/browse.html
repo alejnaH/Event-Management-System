@@ -32,7 +32,7 @@
 
 <script>
     let eventData = [];
-    fetch('data.json')
+    fetch('data.json') // fetch('/Event-Management-System/live-backend/rest/get_events.php')
         .then(response => response.json())
         .then(data => {
             eventData = data;
