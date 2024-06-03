@@ -11097,7 +11097,7 @@ border-bottom-right-radius: .3rem;
   background-color: #fff;
   border-radius: 15px;
   width: 90%;
-  max-width: 800px; /* Increase max-width */
+  max-width: 800px; 
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
   padding: 20px;
 }
@@ -11108,12 +11108,12 @@ border-bottom-right-radius: .3rem;
 }
 
 .form-host {
-  margin-bottom: 0.5rem; /* Decrease bottom margin */
+  margin-bottom: 0.5rem; 
 }
 
 .form-host input {
   width: 100%;
-  max-width: 700px; /* Increase max-width of inputs to match the card */
+  max-width: 700px; 
   padding: 10px;
 }
 
@@ -11153,6 +11153,67 @@ border-bottom-right-radius: .3rem;
 }
 
 
+/*USER PROFILE*/
+
+
+.bodyProfile{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f6f6f6;
+  font-family: Arial, sans-serif;
+}
+
+.cardProfile {
+  background: white;
+  border-radius: 2px;
+  margin: 1rem;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  text-align: center;
+  padding: 1em;
+  height: 340px;
+}
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ccc;
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  margin: 0 auto 20px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+
+}
+
+.gender-container {
+background-color: #f0eaea; 
+border-radius: 10px; 
+padding: 5px 20px;
+width: fit-content; 
+margin: 0 auto; 
+color: darkgray; 
+display: flex; 
+justify-content: center; 
+align-items: center;
+}
+
+.gender-container p {
+margin: 0;
+padding: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .cardProfile {
+      width: 95%;
+      max-width: none; 
+  }
+}
 
 
 
