@@ -1,0 +1,14 @@
+{
+    "name": "alejna/event-management-system",
+    "description": "Event management system project",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alejna Hasanagic",
+            "email": "alejna.hasanagic@stu.ibu.edu.ba"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
